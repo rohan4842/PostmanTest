@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MyfirstProject" tests="7" time="7.169">
+  <testsuite name="Asana api" id="a59f219d-7079-47a1-8942-67f49747383d" timestamp="2020-10-15T06:48:26.786Z" tests="1" failures="0" errors="0" time="1.772">
+    <testcase name="Status code is 200" time="1.772" classname="MyfirstProject"/>
+  </testsuite>
+  <testsuite name="Create First Task" id="c479d43f-1191-42bf-9445-889f78ece586" timestamp="2020-10-15T06:48:26.786Z" tests="0" failures="0" errors="0" time="2.303"/>
+  <testsuite name="httpbin Assertions" id="976c1111-f05a-4dca-8062-0c2ae65151ca" timestamp="2020-10-15T06:48:26.786Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND {{url}}
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+]]></system-err>
+    <testcase name="Status code is 200" time="0.000" classname="MyfirstProject">
+      <failure type="AssertionFailure" message="expected { Object (id, _details, ...) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e0271966-a27f-4637-88fe-abb4fd17ca91.]]>
+        <![CDATA[Collection name: MyfirstProject.]]>
+        <![CDATA[Request name: httpbin Assertions.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected { Object (id, _details, ...) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, _details, ...) } to have property 'code'
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Post Request" id="ec68f4fd-3db0-4051-a27d-79997b107523" timestamp="2020-10-15T06:48:26.786Z" tests="2" failures="2" errors="0" time="1.743">
+    <testcase name="Your test name" time="1.743" classname="MyfirstProject">
+      <failure type="AssertionFailure" message="Cannot read property 'currentdate' of null">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: e0271966-a27f-4637-88fe-abb4fd17ca91.]]>
+        <![CDATA[Collection name: MyfirstProject.]]>
+        <![CDATA[Request name: Post Request.]]>
+        <![CDATA[Test description: Your test name.]]>
+        <![CDATA[Error message: Cannot read property 'currentdate' of null.]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read property 'currentdate' of null
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Put Request" id="fdfd8742-3349-47d7-95c5-8882fda489bd" timestamp="2020-10-15T06:48:26.786Z" tests="4" failures="1" errors="0" time="0.336">
+    <testcase name="Status code is 200" time="0.336" classname="MyfirstProject"/>
+    <testcase name="Content-Type is present" time="0.336" classname="MyfirstProject"/>
+    <testcase name="Response time is less than 200ms" time="0.336" classname="MyfirstProject"/>
+  </testsuite>
+  <testsuite name="ApiKey" id="3ab15c8f-b556-4316-8328-162c96c436cf" timestamp="2020-10-15T06:48:26.786Z" tests="0" failures="0" errors="0" time="0.551"/>
+  <testsuite name="Api&amp;Uid" id="505ad422-a902-48be-ae3f-7beb7e0f0a81" timestamp="2020-10-15T06:48:26.786Z" tests="0" failures="0" errors="0" time="0.464"/>
+</testsuites>
